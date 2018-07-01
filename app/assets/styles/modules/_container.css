@@ -6,11 +6,25 @@
   padding-left: 18px;
   padding-right: 18px;
 
+  .container{
+    padding-left: 0;
+    padding-right: 0;
+
+    @mixin atMedium{
+      padding-left: 18px;
+      padding-right: 18px;
+    }
+  }
+
   &--medium{
     max-width: 970px;
   }
 
   &--mb-small{
-    margin-bottom: 3.875em;
+    margin-bottom: 1em;
+
+    @mixin atMedium{
+      margin-bottom: 3.875em;
+    }
   }
 }

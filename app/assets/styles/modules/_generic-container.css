@@ -1,8 +1,11 @@
 .generic-container{
   p {
-    font-size: 1.125em;
     font-weight: 300;
     line-height: 1.65;
+
+    @mixin atSmall{
+      font-size: 1.125em;
+    }
   }
 
   p a{
