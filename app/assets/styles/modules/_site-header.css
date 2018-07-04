@@ -1,0 +1,18 @@
+.site-header{
+  padding: .5rem 0;
+  background-color: $mainBlue;
+  color: #fff;
+  text-align: center;
+
+  &__text-content{
+    font-weight: 100;
+    display: block;
+    margin-bottom: 1rem;
+
+    @mixin atMedium{
+      margin-right: .7rem;
+      margin-bottom: 0;
+      display: inline-block;
+    }
+  }
+}
