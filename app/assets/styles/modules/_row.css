@@ -1,5 +1,9 @@
 .row{
 
+  &--mt-large{
+    padding-top: 90px;
+  }
+
   &--mb-until-medium{
     margin-bottom: 1rem;
 
@@ -26,7 +30,9 @@
 
   @mixin clearfix;
 
+/* atMedium Media Queries */
   @mixin atMedium{
+
     &__medium-4{
       float: left;
       width: 33.33%;
@@ -48,6 +54,22 @@
 
     &__medium-8-smaller{
       width: 63%;
+    }
+  }
+
+/* atLarge Media Queries */
+  @mixin atLarge{
+    &.equal-height-on-large{
+      display: flex;
+
+      & > div {
+        display: flex;
+      }
+    }
+
+    &__large-4{
+      width: 33.33%;
+      float: left;
     }
   }
 }
