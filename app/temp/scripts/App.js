@@ -94,7 +94,19 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nvar _jquery = __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\");\n\nvar _jquery2 = _interopRequireDefault(_jquery);\n\nvar _RevealItems = __webpack_require__(/*! ./modules/RevealItems */ \"./app/assets/scripts/modules/RevealItems.js\");\n\nvar _RevealItems2 = _interopRequireDefault(_RevealItems);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar revealItemFeatures = new _RevealItems2.default((0, _jquery2.default)(\".feature-item\"), \"75%\");\nvar revealItemTesti = new _RevealItems2.default((0, _jquery2.default)(\".testimonials\"), \"80%\");\n\n//# sourceURL=webpack:///./app/assets/scripts/App.js?");
+eval("\n\nvar _jquery = __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\");\n\nvar _jquery2 = _interopRequireDefault(_jquery);\n\nvar _RevealItems = __webpack_require__(/*! ./modules/RevealItems */ \"./app/assets/scripts/modules/RevealItems.js\");\n\nvar _RevealItems2 = _interopRequireDefault(_RevealItems);\n\nvar _Modal = __webpack_require__(/*! ./modules/Modal */ \"./app/assets/scripts/modules/Modal.js\");\n\nvar _Modal2 = _interopRequireDefault(_Modal);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar modal = new _Modal2.default();\nvar revealItemFeatures = new _RevealItems2.default((0, _jquery2.default)(\".feature-item\"), \"75%\");\nvar revealItemTesti = new _RevealItems2.default((0, _jquery2.default)(\".testimonials\"), \"80%\");\n\n//# sourceURL=webpack:///./app/assets/scripts/App.js?");
+
+/***/ }),
+
+/***/ "./app/assets/scripts/modules/Modal.js":
+/*!*********************************************!*\
+  !*** ./app/assets/scripts/modules/Modal.js ***!
+  \*********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nvar Modal = function Modal() {\n  _classCallCheck(this, Modal);\n};\n\nexports.default = Modal;\n\n//# sourceURL=webpack:///./app/assets/scripts/modules/Modal.js?");
 
 /***/ }),
 
