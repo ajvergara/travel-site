@@ -951,3 +951,16 @@ a {
     width: 34.75px;
     background-position: 36.69752421959096% 45.792307692307695%;
   }
+
+.reveal-item{
+  opacity: 0;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  transition: all .3s ease-out;
+}
+
+.reveal-item--revealed{
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
