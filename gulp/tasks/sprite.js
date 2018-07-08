@@ -8,6 +8,11 @@ gulp.task("beginClean", function(){
 });
 
 config = {
+  shape: {
+    spacing: {
+      padding: 2
+    }
+  },
   mode: {
     css: {
       sprite: 'sprite.svg',
