@@ -349,6 +349,10 @@ body{
   font-family: "Roboto", sans-serif;
 }
 
+body.body--is-fixed{
+    overflow: hidden;
+  }
+
 img{
   max-width: 100%;
 }
@@ -983,7 +987,18 @@ a {
   background-color: rgba(255, 255, 255, .95);
   opacity: 0;
   visibility: hidden;
+  z-index: 5;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  transition: all .3s ease-out;
 }
+
+.modal--is-visible{
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
 
 .modal__inner{
     position: absolute;

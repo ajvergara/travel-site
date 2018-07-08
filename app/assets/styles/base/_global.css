@@ -4,6 +4,10 @@
 
 body{
   font-family: "Roboto", sans-serif;
+
+  &.body--is-fixed{
+    overflow: hidden;
+  }
 }
 
 img{
