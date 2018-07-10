@@ -857,12 +857,20 @@ a {
 @media only screen and (min-width: 768px){
 
 .site-header{
+    position: fixed;
     background-color: rgba(47,85,114, .5)
 }
   }
 
 .site-header--dark{
     background-color: rgba(47,85,114, .8);
+  }
+
+@media only screen and (min-width: 768px){
+
+.site-header--darker{
+      background-color: rgba(47,85,114, .9)
+  }
   }
 
 .site-header__logo{
@@ -876,6 +884,7 @@ a {
             transform-origin: 50% 0;
     background-color: #2f5572;
     padding: 25px 36px;
+    transition: all .3s ease-out;
   }
 
 @media only screen and (min-width: 768px){
@@ -886,6 +895,11 @@ a {
               transform: translate(0)
   }
   }
+
+.site-header--darker .site-header__logo{
+      -webkit-transform: scale(.50);
+              transform: scale(.50);
+    }
 
 .site-header__btn-container{
     display: inline-block;
@@ -1033,6 +1047,8 @@ a {
     margin-top: .5rem;
     background-color: rgba(47,85,114, .8);
     font-size: .8rem;
+    transition: all .3s ease-out;
+
   }
 
 @media only screen and (min-width: 768px){
@@ -1042,8 +1058,13 @@ a {
       padding: .7rem 0;
       margin-top: 0;
       background-color: transparent
+
   }
   }
+
+.primary-nav a:hover, .primary-nav a.current-item{
+      color: #d59541;
+    }
 
 /* Do not edit modules/_sprite instead go to templates/styles.css */
 
