@@ -1,12 +1,13 @@
 .large-hero{
   position: relative;
-  border-bottom: solid 6px $mainBlue;
+  border-bottom: solid 10px $mainBlue;
 
   &__image{
     display: block;
   }
 
   &__text-content{
+    padding-top: 90px;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -30,7 +31,7 @@
     font-weight: 300;
     color: $mainBlue;
     margin-top: 0;
-    margin-bottom: .5em;
+    margin-bottom: .5rem;
 
     @mixin atSmall{
       font-size: 2.9rem;
