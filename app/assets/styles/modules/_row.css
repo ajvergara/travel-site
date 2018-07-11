@@ -59,7 +59,7 @@
 
 /* atLarge Media Queries */
   @mixin atLarge{
-    &.equal-height-on-large{
+    .flexbox &.equal-height-on-large{
       display: flex;
 
       & > div {

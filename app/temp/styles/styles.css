@@ -665,11 +665,11 @@ a {
 /* atLarge Media Queries */
 
 @media only screen and (min-width: 992px){
-    .row.equal-height-on-large{
+    .flexbox .row.equal-height-on-large{
       display: flex;
     }
 
-      .row.equal-height-on-large > div {
+      .flexbox .row.equal-height-on-large > div {
         display: flex;
       }
 
@@ -1069,6 +1069,10 @@ a {
 
 .icon{
   background-image: url("/assets/images/sprites/sprite-ff4abae1.svg");
+}
+
+.no-svg .icon{
+  background-image: url("/assets/images/sprites/sprite-ff4abae1.png");
 }
 
 .icon--clear-view-escapes{
