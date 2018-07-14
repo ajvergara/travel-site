@@ -7,6 +7,14 @@ class RevealItems{
     this.offsetPercent = offset;
     this.hideInitially();
     this.createWaypoints();
+    this.lazyImages = $(".lazyload");
+    this.lazyImagesRefresh();
+  }
+
+  lazyImagesRefresh(){
+    this.lazyImages.on("load", function(){
+      return Waypoint.refreshAll();
+    });
   }
 
   hideInitially(){

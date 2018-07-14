@@ -38,7 +38,9 @@
     }
 
     .site-header--darker &{
-      transform: scale(.50);
+      @mixin atMedium{
+        transform: scale(.50);
+      }
     }
   }
 

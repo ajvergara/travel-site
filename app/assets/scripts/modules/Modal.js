@@ -12,6 +12,13 @@ class Modal{
   events(){
     this.openModalBtn.on("click", this.openModalFN.bind(this));
     this.closeModalBtn.on("click", this.closeModalFN.bind(this));
+    $(document).on("keyup", this.keyPress.bind(this));
+  }
+
+  keyPress(e){
+    if(e.keyCode == "27"){
+      return this.closeModalFN();
+    }
   }
 
   openModalFN(){
